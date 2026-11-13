@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="个人主页 · 托管于蓝队云免费虚拟主机">
-  <title>我的个人主页</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+  <meta name="description" content="承接机器视觉检测系统、PyQt5 程序 GUI 界面设计、数据可视化设计与可视化系统定制开发，一对一沟通，交付源码与售后支持。">
+  <title>视觉检测 · PyQt5 界面开发 · 数据可视化 | 定制开发服务</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👁️</text></svg>">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,12 +13,12 @@
   <!-- 顶部导航 -->
   <header class="header" id="top">
     <nav class="nav container">
-      <a class="nav__logo" href="#top">🚀 MySite</a>
+      <a class="nav__logo" href="#top">👁️ VisionDev 工作室</a>
       <button class="nav__toggle" id="navToggle" aria-label="打开菜单">☰</button>
       <ul class="nav__menu" id="navMenu">
-        <li><a href="#about">关于</a></li>
-        <li><a href="#skills">技能</a></li>
-        <li><a href="#projects">作品</a></li>
+        <li><a href="#services">服务</a></li>
+        <li><a href="#process">流程</a></li>
+        <li><a href="#why">优势</a></li>
         <li><a href="#contact">联系</a></li>
       </ul>
     </nav>
@@ -27,86 +27,108 @@
   <!-- 首屏 -->
   <section class="hero">
     <div class="container hero__inner">
-      <p class="hero__hello">👋 你好，我是</p>
-      <h1 class="hero__title">一名热爱技术的开发者</h1>
+      <p class="hero__hello">✅ 承接定制开发</p>
+      <h1 class="hero__title">视觉检测 · GUI 界面 · 数据可视化</h1>
       <p class="hero__subtitle">
-        这里是我的个人主页，托管在蓝队云免费虚拟主机上。<br>
-        专注于 Web 开发与工具构建，持续学习中。
+        专注机器视觉检测系统、PyQt5 桌面程序界面设计、<br>
+        数据可视化设计与可视化系统开发，从需求沟通到交付上线，一对一服务。
       </p>
       <div class="hero__actions">
-        <a class="btn btn--primary" href="#projects">查看作品</a>
-        <a class="btn btn--ghost" href="#contact">联系我</a>
+        <a class="btn btn--primary" href="#contact">微信联系我</a>
+        <a class="btn btn--ghost" href="#services">查看服务</a>
       </div>
+      <ul class="hero__stats">
+        <li><strong>视觉检测</strong><span>缺陷 / 尺寸 / 定位</span></li>
+        <li><strong>PyQt5</strong><span>界面设计 / exe 交付</span></li>
+        <li><strong>数据可视化</strong><span>大屏 / 看板 / 系统</span></li>
+      </ul>
     </div>
     <div class="hero__blob" aria-hidden="true"></div>
   </section>
 
-  <!-- 关于 -->
-  <section class="section" id="about">
+  <!-- 服务 -->
+  <section class="section" id="services">
     <div class="container">
-      <h2 class="section__title reveal">关于我</h2>
-      <div class="about reveal">
-        <p>
-          我是一名开发者，喜欢把想法变成可用的产品。平时写代码、折腾服务器、
-          也喜欢研究各种提升效率的工具。这个网站是我部署在
-          <strong>蓝队云免费虚拟主机</strong>上的第一个静态站点 🎉
-        </p>
-        <ul class="about__facts">
-          <li>📍 坐标：中国</li>
-          <li>💼 方向：Web 开发</li>
-          <li>🎯 状态：持续学习中</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- 技能 -->
-  <section class="section section--alt" id="skills">
-    <div class="container">
-      <h2 class="section__title reveal">技能</h2>
+      <h2 class="section__title reveal">服务内容</h2>
       <div class="grid">
         <div class="card reveal">
-          <div class="card__icon">🌐</div>
-          <h3>前端开发</h3>
-          <p>HTML / CSS / JavaScript，了解主流框架，能独立完成静态站点与交互页面。</p>
+          <div class="card__icon">🔍</div>
+          <h3>视觉检测系统</h3>
+          <p>基于机器视觉的缺陷检测、尺寸测量、目标定位、OCR 字符识别、条码读取，适配工业相机与产线场景。</p>
+        </div>
+        <div class="card reveal">
+          <div class="card__icon">🖥️</div>
+          <h3>PyQt5 界面设计</h3>
+          <p>桌面程序 GUI 开发：界面布局、美化与交互设计，主题定制，Windows 打包发布（exe），开箱即用。</p>
+        </div>
+        <div class="card reveal">
+          <div class="card__icon">📊</div>
+          <h3>数据可视化设计</h3>
+          <p>数据大屏、监控看板、统计图表与报表导出，多设备自适应展示，让数据一目了然。</p>
         </div>
         <div class="card reveal">
           <div class="card__icon">⚙️</div>
-          <h3>后端与脚本</h3>
-          <p>Python / Node.js，能编写接口、爬虫与自动化脚本，解决实际问题。</p>
-        </div>
-        <div class="card reveal">
-          <div class="card__icon">🛠️</div>
-          <h3>部署运维</h3>
-          <p>熟悉虚拟主机、FTP 部署、域名解析与 SSL 证书配置的基本流程。</p>
+          <h3>可视化系统设计</h3>
+          <p>上位机软件、组态监控系统、检测 + 可视化一体化方案，软硬件联动，全流程交付。</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 作品 -->
-  <section class="section" id="projects">
+  <!-- 开发流程 -->
+  <section class="section section--alt" id="process">
     <div class="container">
-      <h2 class="section__title reveal">作品</h2>
+      <h2 class="section__title reveal">合作流程</h2>
+      <ol class="process reveal">
+        <li class="process__step">
+          <span class="process__num">01</span>
+          <h3>需求沟通</h3>
+          <p>微信 / QQ 联系，描述你的场景与想法，梳理功能清单。</p>
+        </li>
+        <li class="process__step">
+          <span class="process__num">02</span>
+          <h3>方案报价</h3>
+          <p>给出技术方案、周期与费用评估，确认后开工。</p>
+        </li>
+        <li class="process__step">
+          <span class="process__num">03</span>
+          <h3>开发联调</h3>
+          <p>阶段性演示进度，随时沟通调整，确保方向不偏。</p>
+        </li>
+        <li class="process__step">
+          <span class="process__num">04</span>
+          <h3>交付售后</h3>
+          <p>交付程序与源码、协助部署，提供后续维护支持。</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 优势 -->
+  <section class="section" id="why">
+    <div class="container">
+      <h2 class="section__title reveal">选择我的理由</h2>
       <div class="grid">
-        <a class="card card--link reveal" href="#" >
-          <div class="card__icon">📄</div>
-          <h3>个人主页</h3>
-          <p>你现在看到的这个网站 —— 纯 HTML/CSS/JS 手写，零依赖。</p>
-          <span class="card__more">查看 →</span>
-        </a>
-        <a class="card card--link reveal" href="#">
-          <div class="card__icon">🧰</div>
-          <h3>工具箱（规划中）</h3>
-          <p>计划收录常用在线小工具：格式转换、正则测试、时间戳等。</p>
-          <span class="card__more">敬请期待 →</span>
-        </a>
-        <a class="card card--link reveal" href="#">
-          <div class="card__icon">📝</div>
-          <h3>博客（规划中）</h3>
-          <p>记录学习笔记与踩坑经验，陆续更新中。</p>
-          <span class="card__more">敬请期待 →</span>
-        </a>
+        <div class="card reveal">
+          <div class="card__icon">💬</div>
+          <h3>一对一沟通</h3>
+          <p>直接与开发者本人对接，没有中间转译，需求理解零偏差，响应及时。</p>
+        </div>
+        <div class="card reveal">
+          <div class="card__icon">🧩</div>
+          <h3>按需定制</h3>
+          <p>不套模板：界面、功能、交互均按你的实际业务场景量身设计实现。</p>
+        </div>
+        <div class="card reveal">
+          <div class="card__icon">📦</div>
+          <h3>交付源码</h3>
+          <p>交付完整源代码与打包程序，文档齐全，后续可自行维护或二次开发。</p>
+        </div>
+        <div class="card reveal">
+          <div class="card__icon">🛡️</div>
+          <h3>售后保障</h3>
+          <p>交付后提供使用指导与缺陷修复支持，长期合作更放心。</p>
+        </div>
       </div>
     </div>
   </section>
@@ -114,26 +136,35 @@
   <!-- 联系 -->
   <section class="section section--alt" id="contact">
     <div class="container">
-      <h2 class="section__title reveal">联系我</h2>
-      <div class="contact reveal">
-        <p>如果你对本站感兴趣，或者想交流技术，欢迎通过以下方式联系：</p>
-        <div class="contact__links">
-          <a class="btn btn--primary" href="mailto:you@example.com">✉️ 发邮件</a>
-          <a class="btn btn--ghost" href="https://github.com/yourname" target="_blank" rel="noopener">GitHub</a>
+      <h2 class="section__title reveal">联系方式</h2>
+      <div class="contact-cards reveal">
+        <div class="contact-card">
+          <img class="contact-card__qr" src="images/wechat-qr.jpg" alt="微信二维码：扫码添加好友">
+          <h3>💬 微信联系</h3>
+          <p>扫码添加好友，注明来意</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-card__icon">🐧</div>
+          <h3>QQ 联系</h3>
+          <p class="contact-card__num" id="qqNumber">1845215613</p>
+          <button class="btn btn--ghost btn--small" id="copyQQ" type="button">复制 QQ 号</button>
+        </div>
+        <div class="contact-card">
+          <div class="contact-card__icon">✉️</div>
+          <h3>邮箱联系</h3>
+          <p class="contact-card__num">1845215613@qq.com</p>
+          <a class="btn btn--primary btn--small" href="mailto:1845215613@qq.com">发送邮件</a>
         </div>
       </div>
+      <p class="contact__tip reveal">支持个人项目、课程设计、毕业设计、企业定制等各类需求，欢迎咨询报价。</p>
     </div>
   </section>
 
-  <!-- 页脚：蓝队云链接为免费主机使用条件，请勿删除 -->
+  <!-- 页脚 -->
   <footer class="footer">
     <div class="container footer__inner">
-      <p>© 2026 MySite · 保留所有权利</p>
-      <p class="footer__host">
-        本网站由
-        <a href="https://www.landui.com" target="_blank" rel="noopener">蓝队云</a>
-        免费虚拟主机提供支持
-      </p>
+      <p>© 2026 VisionDev 工作室 · 保留所有权利</p>
+      <p class="footer__slogan">视觉检测 · GUI 界面 · 数据可视化 · 定制开发</p>
     </div>
   </footer>
 

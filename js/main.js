@@ -30,3 +30,25 @@ const observer = new IntersectionObserver(
 );
 
 document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+// 复制 QQ 号
+const copyBtn = document.getElementById('copyQQ');
+if (copyBtn) {
+  copyBtn.addEventListener('click', async () => {
+    const qq = document.getElementById('qqNumber').textContent.trim();
+    const original = copyBtn.textContent;
+    try {
+      await navigator.clipboard.writeText(qq);
+      copyBtn.textContent = '✓ 已复制';
+    } catch {
+      // 剪贴板 API 不可用时的兜底：选中文本让用户手动 Ctrl+C
+      const range = document.createRange();
+      range.selectNodeContents(document.getElementById('qqNumber'));
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      copyBtn.textContent = '已选中，请 Ctrl+C';
+    }
+    setTimeout(() => { copyBtn.textContent = original; }, 2000);
+  });
+}
